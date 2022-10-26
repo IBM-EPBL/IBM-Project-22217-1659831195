@@ -3,7 +3,6 @@ Personal Expense Tracker Application
 <!DOCTYPE>
 <html>
 <head>
-<h1>IBM-Project-22217-1659831195</h1>
   <h2>Batch Name : B7-1A3E</h2>
  <h3>Team ID : PNT2022TMID41607</h3>
   </head>
