@@ -8,7 +8,7 @@ Personal Expense Tracker Application
   </head>
 <br>
 <br>
-  <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOkn2j8enyjE7epRL7Z4yfNMu_DBXHFeGQJQ&usqp=CAU" height="400" width="400">
+  <img src ="http://store-images.s-microsoft.com/image/apps.39340.14291064629179495.5303e9ac-9b62-4aa3-aa7a-a96e7536733f.413fede2-65c8-4248-ac49-da97628ef103" height="400" width="400">
 <br>
 <br>
 Mentor(Industry) Name : Khusboo
