@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FEEDBACK FORM</title>
+
+  
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  h1{
+    color: white;
+    text-align: center;
+    padding-top: 9px;
+  }
+  section{
+      position:absolute;
+      height: 100%;
+      width: 100%;
+      background: url('../static/bg1.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(1px) brightness(70%);
+  }
+  body{
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 450px;
+    background: rgb(13, 3, 76);
+    box-shadow: 0 0 8px rgba(250,250,250,0.6);
+    opacity: 0.6;
+  }
+  .container form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+  }
+  form h1{
+    padding: 10px 0;
+  }
+  form .id{
+    position: relative;
+  }
+  .id i{
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  form input{
+    width: 100%;
+    height:50px;
+    margin:4px 0;
+    border : 1px solid black;
+    border-radius: 3px;
+    background: white;
+    padding :0 15px;
+    padding-right:45px; 
+    font-size: 20px;
+  }
+  form textarea{
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: white;
+    font-size: 20px;
+    width:100%;
+    margin : 4px 0; 
+  }
+  
+  .btn{
+    margin-top: 5px;
+    border: none;
+    background: #00fff0;
+    color: #222;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer; 
+    border-radius: 3px;    
+  }
+  
+  form input:focus,
+  form textarea:focus{
+    border: 1px solid black;
+    color: black;
+    transition : all 0.3s ease;
+  }
+  form input:focus::placeholder,
+  form textarea:focus::placeholder{
+    padding-left: 4px;
+    color:black;
+    transition : all 0.3s ease;
+  
+  }
+  form input:focus +i
+  {
+    color: black;
+    transition: all 0.3s ease;
+  }</style>
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+
+</head>
+<body>
+  <section></section>
+  <div class="container">
+
+    <h1>Give your feedback</h1>
+    <form id="details">
+      <div class="id">
+      <input type="text" placeholder="Full name">
+        <i class="far fa-user"></i>
+      </div>
+      <div class="id">
+        <input type="email" name=""  placeholder="Email address">
+        <i class="far fa-envelope"></i>
+      </div>
+      <textarea cols="15" rows="5" placeholder="Enter Your opinions here.." id="user_input"></textarea>
+      <input type="submit" onclick="showInput();" class="btn"><br/>
+      <label style="color: white"><h3>Your input:</h3> </label>
+      <p><h3 style="color: white">Message: <span id='display' style="color: white" ></span></h3></p>
+    </form>
+  </div>
+
+<br>
+<br>
+
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = document.getElementById("user_input").value;
+        alert("your response has been stored");
+    }
+  </script>
+
+</body>
+</html>
